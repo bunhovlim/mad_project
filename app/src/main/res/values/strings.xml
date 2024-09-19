@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mad_project</string>
+    <string name="name">Hello, My name is Molika.</string>
+    <string name="menu_icon">Menu Icon</string>
+    <string name="buy_item">Buy Now</string>
+    <string name="search">searching..........</string>
+    <string name="price">price: $300</string>
+    <string name="title">Product Title</string>
+    <string name="description">Product description goes here.</string>
+</resources>
