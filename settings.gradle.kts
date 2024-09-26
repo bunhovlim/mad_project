@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "mad_project"
+rootProject.name = "MAD_project"
 include(":app")
  
