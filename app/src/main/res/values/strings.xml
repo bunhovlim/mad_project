@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">mad_project</string>
+
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+
+    <string name="email">Email</string>
+    <string name="put_email">Enter Your Email</string>
+
+    <string name="password">Password</string>
+    <string name="put_password">Enter Your Password</string>
+
+    <string name="re_password">Re-Type password</string>
+    <string name="put_re_password">Enter Your Re-Type Password</string>
+
+    <string name="name">Name</string>
+    <string name="put_name">Enter Your Name</string>
+
+
+
+
+
 </resources>
