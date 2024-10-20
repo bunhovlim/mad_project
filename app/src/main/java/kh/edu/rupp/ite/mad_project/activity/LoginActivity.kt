@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import kh.edu.rupp.ite.mad_project.MainActivity
 import kh.edu.rupp.ite.mad_project.api.ApiManager
 import kh.edu.rupp.ite.mad_project.databinding.ActivityLoginBinding
 import kh.edu.rupp.ite.mad_project.model.LoginRequest
@@ -30,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
 
                 // Check if already logged in
                 if (sharedPrefManager.token != null) {
-//                        navigateToHome()
+                        navigateToHome()
                 }
 
                 // Set button click listeners
@@ -60,7 +61,7 @@ class LoginActivity : AppCompatActivity() {
                                         val token = response.body()!!.token
                                         sharedPrefManager.saveToken(token)
                                         Toast.makeText(this@LoginActivity, "Login Successfully", Toast.LENGTH_SHORT).show()
-//                                        navigateToHome()
+                                        navigateToHome()
                                 } else {
                                         Toast.makeText(this@LoginActivity, "Login failed", Toast.LENGTH_SHORT).show()
                                 }
@@ -72,9 +73,14 @@ class LoginActivity : AppCompatActivity() {
                 })
         }
 
-//        private fun navigateToHome() {
-//                val intent = Intent(this@LoginActivity, HomeActivity::class.java)
-//                startActivity(intent)
-//                finish()
-//        }
+        private fun navigateToHome() {
+                try {
+                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                } catch (e: Exception) {
+                        Toast.makeText(this, "Navigation failed: ${e.message}", Toast.LENGTH_LONG).show()
+                }
+        }
+
 }
