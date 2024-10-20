@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MAD_project"
-include(":app")
-include(":app:androidTest")  // Add this line to explicitly include the androidTest module
+rootProject.name = "mad_project"
+include(":app")  // Include only the main app module
