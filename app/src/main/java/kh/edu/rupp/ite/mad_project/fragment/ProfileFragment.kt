@@ -8,6 +8,7 @@ import android.os.Looper
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -73,7 +74,6 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
     }
 
 
-
     private fun showLoading(isLoading: Boolean) {
         progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
         tvFullName.visibility = if (isLoading) View.GONE else View.VISIBLE
@@ -96,7 +96,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             btnCancel.isEnabled = false
 
             logoutUserWithDelay {
-//                sharedPrefManager.clearToken()
+                sharedPrefManager.clearToken()
                 val intent = Intent(requireContext(), LoginActivity::class.java)
                 startActivity(intent)
                 requireActivity().finish()

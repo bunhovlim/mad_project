@@ -63,9 +63,12 @@ class LoginActivity : AppCompatActivity() {
                                 showLoading(false)
                                 if (response.isSuccessful && response.body() != null) {
                                         val token = response.body()!!.token
-                                        val userId = response.body()!!.userId
+                                        val userId = response.body()!!.userId  // Assuming the userId is available in the response
+
+                                        // Save token and userId in SharedPreferences
                                         sharedPrefManager.saveToken(token)
-//                                        sharedPrefManager.saveUserId(userId)
+                                        sharedPrefManager.saveUserId(userId)
+
                                         Toast.makeText(this@LoginActivity, "Login Successfully", Toast.LENGTH_SHORT).show()
                                         navigateToHome()
                                 } else {
@@ -80,6 +83,7 @@ class LoginActivity : AppCompatActivity() {
                 })
         }
 
+
         private fun navigateToHome() {
                 try {
                         val intent = Intent(this@LoginActivity, MainActivity::class.java)
@@ -92,9 +96,9 @@ class LoginActivity : AppCompatActivity() {
 
         private fun showLoading(isLoading: Boolean) {
                 if (isLoading) {
-//                        binding.loadingLayout.visibility = View.VISIBLE
+                        binding.loadingLayout.visibility = View.VISIBLE
                 } else {
-//                        binding.loadingLayout.visibility = View.GONE
+                        binding.loadingLayout.visibility = View.GONE
                 }
         }
 
