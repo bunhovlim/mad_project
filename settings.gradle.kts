@@ -13,6 +13,11 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "MAD_project"
 include(":app")
  
+=======
+rootProject.name = "mad_project"
+include(":app")  // Include only the main app module
+>>>>>>> master
