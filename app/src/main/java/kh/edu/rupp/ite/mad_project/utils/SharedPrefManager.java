@@ -26,4 +26,9 @@ public class SharedPrefManager {
     public void clear() {
         editor.clear().apply();
     }
+
+    public String getUserId() {
+
+        return "";
+    }
 }

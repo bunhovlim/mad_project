@@ -96,7 +96,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             btnCancel.isEnabled = false
 
             logoutUserWithDelay {
-                sharedPrefManager.clearToken()
+//                sharedPrefManager.clearToken()
                 val intent = Intent(requireContext(), LoginActivity::class.java)
                 startActivity(intent)
                 requireActivity().finish()
