@@ -16,6 +16,10 @@
     <string name="name">Name</string>
     <string name="put_name">Enter Your Name</string>
 
+    <string name="name_product">Name product xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </string>
+    <string name="price">$1200</string>
+    <string name="buy_item">Add</string>
 
 
 
