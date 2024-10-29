@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">mad_project</string>
-<<<<<<< HEAD
-    <string name="name">Hello, My name is Molika.</string>
-=======
 
     <string name="login">Log In</string>
     <string name="signup">Sign Up</string>
