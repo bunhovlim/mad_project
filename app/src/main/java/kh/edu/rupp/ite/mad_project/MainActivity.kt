@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kh.edu.rupp.ite.mad_project.fragment.CardFragment
 import kh.edu.rupp.ite.mad_project.fragment.FavoriteFragment
 import kh.edu.rupp.ite.mad_project.fragment.HomeFragment
 import kh.edu.rupp.ite.mad_project.fragment.OrderFragment
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.nav_home -> fragment = HomeFragment()
                 R.id.nav_favorite -> fragment = FavoriteFragment()
-                R.id.nav_order -> fragment = OrderFragment()
+                R.id.nav_order -> fragment = CardFragment()
                 R.id.nav_profile -> fragment = ProfileFragment()
             }
             loadFragment(fragment)
