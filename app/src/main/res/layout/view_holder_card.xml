@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_product"
+        android:layout_marginEnd="16dp"
+        tools:ignore="ContentDescription" />
+
+    <!-- Product Details Container -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_name"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Product Size -->
+        <TextView
+            android:id="@+id/tvProductSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="14sp" />
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Quantity Controls Container -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Decrease Quantity Button -->
+        <ImageButton
+            android:id="@+id/btnDecreaseQuantity"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/minus_button"
+            android:contentDescription="@string/decrease"
+            android:scaleType="centerInside" />
+
+        <!-- Quantity Text -->
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qty"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+        <!-- Increase Quantity Button -->
+        <ImageButton
+            android:id="@+id/btnIncreaseQuantity"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/increase"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/plus_circle" />
+    </LinearLayout>
+</LinearLayout>
