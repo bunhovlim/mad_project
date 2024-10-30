@@ -14,12 +14,28 @@
     <string name="put_re_password">Enter Your Re-Type Password</string>
 
     <string name="name">Name</string>
+    <string name="name_product">Product Name</string>
+    <string name="buy_item">Buy</string>
     <string name="put_name">Enter Your Name</string>
 
-    <string name="name_product">Name product xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
-    <string name="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </string>
+    <!-- My Cart -->
+    <string name="my_cart">My Cart</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="title_name">Title name product</string>
+    <string name="description">Description of the products.</string>
+    <string name="increase">Increase quantity</string>
+    <string name="decrease">Decrease quantity</string>
     <string name="price">$1200</string>
-    <string name="buy_item">Add</string>
+    <string name="qty">1</string>
+    <string name="item_total">Item Total</string>
+    <string name="discount">Discount</string>
+    <string name="delivery">Delivery</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="price_item">$730</string>
+    <string name="price_dis">$50</string>
+    <string name="price_delivery">Free</string>
+    <string name="price_grand_total">$680</string>
+    <string name="back_button_description">Back</string>
 
 
 

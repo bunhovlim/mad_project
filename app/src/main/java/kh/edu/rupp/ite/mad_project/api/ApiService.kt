@@ -1,5 +1,7 @@
 package kh.edu.rupp.ite.mad_project.api
 
+import kh.edu.rupp.ite.mad_project.model.CartResponse
+import kh.edu.rupp.ite.mad_project.model.FavoriteProductResponse
 import kh.edu.rupp.ite.mad_project.model.HomeProducts
 import kh.edu.rupp.ite.mad_project.model.LoginRequest
 import kh.edu.rupp.ite.mad_project.model.ProfileResponse
@@ -23,7 +25,13 @@ interface ApiService {
     @GET("products/byModel/{models}")
     fun getProductsByCategory(@Path("models") categoryName: String): Call<List<HomeProducts>>
     @GET("favorites/{userId}") // Update with your actual endpoint
-    fun getFavoriteProducts(@Path("userId") userId: String): Call<List<HomeProducts>>
+    fun getFavoriteProducts(@Path("userId") userId: String): Call<List<FavoriteProductResponse>>
     @GET("user/{userId}")
     fun getUser(@Path("userId") userId: String): Call<ProfileResponse>
+
+    @GET("cart/{userId}")
+    fun getUserCart(@Path("userId") userId: String): Call<List<CartResponse>>
+
+    @GET("favorites/{userId}")
+    fun getUserFavorite(@Path("userId") userId: String): Call<List<FavoriteProductResponse>>
 }
