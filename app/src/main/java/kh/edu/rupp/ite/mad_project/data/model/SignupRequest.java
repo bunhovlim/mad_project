@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.mad_project.model;
+package kh.edu.rupp.ite.mad_project.data.model;
 
 public class SignupRequest {
     private String fullName;
