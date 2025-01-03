@@ -14,8 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.Arrays;
 import java.util.List;
 
-import kh.edu.rupp.ite.mad_project.Adapter.HomeModelAdapter;
-import kh.edu.rupp.ite.mad_project.Adapter.HomeProductAdapter;
 import kh.edu.rupp.ite.mad_project.R;
 import kh.edu.rupp.ite.mad_project.api.ApiManager;
 import kh.edu.rupp.ite.mad_project.model.HomeProducts;
